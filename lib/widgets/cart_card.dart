@@ -240,7 +240,7 @@ class _AddCarState extends State<_AddCar> {
             child: const Text('Eliminar',style: TextStyle(color: Colors.white),),
             onPressed: () {
               setState(() {
-                productsProvider.addItemCart(product.id, 1);
+                productsProvider.addItemCart(product.id, cantItem);
                 productCart.deleteProduct(product.id); 
                
               });
