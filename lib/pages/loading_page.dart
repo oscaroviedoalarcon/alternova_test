@@ -33,7 +33,6 @@ class LoadingPage extends StatelessWidget {
     await loadPreferences(context);
 
     if(autenticado.isNotEmpty){
-
       // DE ESTA FORMA SE HACE MAS RAPIDO EL PASE DE PANTALLAS
       Navigator.pushReplacement(
         context, 

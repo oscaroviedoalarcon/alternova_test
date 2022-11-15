@@ -36,7 +36,7 @@ class CartPage extends StatelessWidget {
             children: [
               Text('Precio total : \$ ${cartProvider.totalPay}', style: const TextStyle(fontSize: 20)),
 
-              if(cartProvider.cart.isNotEmpty)
+              if(cartProvider.cart.isNotEmpty && cartProvider.totalPay > 0)
                 MaterialButton(
                   height: 40,
                   color: Colors.red[400],

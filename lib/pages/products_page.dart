@@ -28,7 +28,7 @@ class ProductsPage extends StatelessWidget {
               (){
                 final authService = Provider.of<AuthService>(context,listen: false);
                 authService.logout();
-                Navigator.pushReplacementNamed(context, 'login');
+                Navigator.of(context).pushNamedAndRemoveUntil('login', (Route<dynamic> route) => false);
               }
             );
           }

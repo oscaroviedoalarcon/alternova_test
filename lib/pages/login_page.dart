@@ -116,7 +116,7 @@ class _Body extends StatelessWidget {
               autocorrect: false,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecorations.authInputDecoration(
-                hintText: 'example@corre.com',
+                hintText: 'micorreo@correo.com',
                 labelText: 'Correo electrónico',
                 prefixIcon: Icons.alternate_email_sharp
               ),
@@ -144,18 +144,18 @@ class _Body extends StatelessWidget {
             const SizedBox(height: 50),
 
             TextButton(
-              //onPressed: () => Navigator.pushReplacementNamed(context, 'register') ,
-              onPressed: () => Navigator.push(context, PageRouteBuilder(
-                pageBuilder: (_, __, ___) => const RegisterPage(),
-                transitionDuration: const Duration(milliseconds: 200),
-                transitionsBuilder: (_, a, __, c) => SlideTransition(
-                  position:Tween<Offset>(
-                    begin: const Offset(1,0),
-                    end: Offset.zero
-                  ).animate(a), 
-                  child: c
-                )
-              )) ,
+              onPressed: () => Navigator.pushNamed(context, 'register') ,
+              // onPressed: () => Navigator.push(context, PageRouteBuilder(
+              //   pageBuilder: (_, __, ___) => const RegisterPage(),
+              //   transitionDuration: const Duration(milliseconds: 200),
+              //   transitionsBuilder: (_, a, __, c) => SlideTransition(
+              //     position:Tween<Offset>(
+              //       begin: const Offset(1,0),
+              //       end: Offset.zero
+              //     ).animate(a), 
+              //     child: c
+              //   )
+              // )) ,
               style: ButtonStyle(
                 //overlayColor: MaterialStateProperty.all(Colors.indigo.withOpacity(0.1)),
                 shape: MaterialStateProperty.all(const StadiumBorder())
